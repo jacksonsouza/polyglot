@@ -118,7 +118,7 @@ for (i = 1; i <= pyramidLevels; i++) { //populating random pyramid for testing
 	pyramid.push(level);
 }
 
-var givenOne = [
+var emailed = [
            ["17"],
        ["51", "29"],
     ["13", "11", "70"],
@@ -126,35 +126,45 @@ var givenOne = [
 ];
 
 
-var givenTwo = [
+var dynamic = [
            ["10"],
        ["20", "50"],
     ["99", "98", "12"],
  ["85", "88", "22", "07"]
 ];
 
-var badtestOne = [
-           ["10"],
-       ["-20", "50"],
-    ["99", "98", "12"],
- ["85", "808", "22", "07"]
+// var badtestOne = [
+//            ["10"],
+//        ["-20", "50"],
+//     ["99", "98", "12"],
+//  ["85", "808", "22", "07"]
+// ];
+
+// var badtestTwo = [
+//            ["10"],
+//        ["20", "a"],
+//     ["99", "98", "12"],
+//  ["85", "88", "22", "07"]
+// ];
+
+// var badtestThree = [
+//        ["20", "50"],
+//            ["10"],
+//     ["99", "98", "12"],
+//  ["85", "88", "22", "07"]
+//];
+
+var singleItem = [
+       ["42"]
 ];
 
-var badtestTwo = [
-           ["10"],
-       ["20", "a"],
-    ["99", "98", "12"],
- ["85", "88", "22", "07"]
-];
+console.log(emailed);
+console.log(smallestPath(emailed));
 
-var badtestThree = [
-       ["20", "50"],
-           ["10"],
-    ["99", "98", "12"],
- ["85", "88", "22", "07"]
-];
+console.log(dynamic);
+console.log(smallestPath(dynamic));
 
-console.log(pyramid);
-console.log(smallestPath(pyramid));
+console.log(singleItem);
+console.log(smallestPath(singleItem));
 
 
