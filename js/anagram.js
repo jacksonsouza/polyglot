@@ -1,16 +1,18 @@
+require("babel-polyfill");
+
 // 'cat' == 'act'
 // 'hello' != 'heelo'
 
-input_list = ['cat','dog','man','heelo','rats','sun','star','beach','god','hello','tsar']
+//input_list = ['cat','dog','man','heelo','rats','sun','star','beach','god','hello','tsar']
 
 // output = ['dog','rats','star','god','tsar']
 
-function anagram (a) {
+exports.anagram = function (a) {
     var output = [];
     var words = [];
     //var counts = {};
     
-    for (i=0; i < a.length; i++) { //splitting each character into a separate array in words array, populate counts
+    for (let i=0; i < a.length; i++) { //splitting each character into a separate array in words array, populate counts
         var word = a[i].split('')
         words.push(word.sort());
         //counts[i]={};
@@ -26,10 +28,10 @@ function anagram (a) {
     //     }
     // }
 
-    for (i=0; i < a.length; i++) { //comparing & populating outputs array
+    for (let i=0; i < a.length; i++) { //comparing & populating outputs array
         var curr = words[i]
 
-        for (j=0; j < a.length; j++) {
+        for (let j=0; j < a.length; j++) {
             var on = words[j]
 
             if(i!= j && JSON.stringify(curr) == JSON.stringify(on)) {
@@ -45,7 +47,5 @@ function anagram (a) {
         return output.indexOf(w) == i;
     });
 
-    console.log(output)
+    return output;
 }
-
-anagram(input_list);
