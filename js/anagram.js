@@ -21,16 +21,14 @@ exports.anagram = arr => {
 
   for (let i = 0; i < arr.length; i++) {
   	for (let j = 0; j < arr.length; j++) {
-  	  let a = arr[i],
-  	  		aSorted = sorted[i],
-  	  		bSorted = sorted[j];
+  	  let o = arr[i];
 
-  	  if (aSorted === bSorted && i != j) {
-  	  	if(result.hasOwnProperty(a)) {
-  	  		result[a].push(arr[j]);
+  	  if (sorted[i] === sorted[j] && i != j) {
+  	  	if(result.hasOwnProperty(o)) {
+  	  		result[o].push(arr[j]);
   	  	} else {
-  	  		result[a] = [];
-  	  		result[a].push(arr[j]);
+  	  		result[o] = [];
+  	  		result[o].push(arr[j]);
   	  	}
   	  }
   	}
