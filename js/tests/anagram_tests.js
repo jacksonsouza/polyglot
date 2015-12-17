@@ -1,11 +1,23 @@
 var poly = require("../anagram");
+var expect = require('chai').expect;
 
-var chai = require('chai')
-  , expect = chai.expect
-  , should = chai.should();
+describe('Anagram: Simple', function(){
+  it('should return an object of containing values that are anagrams of eachother', function(){
+    var result = poly.anagram(['cat','dog','man','heelo','rats','sun','star','beach','god','hello','tsar']);
 
-describe('Anagram', function(){
-	it('should return values that are anagrams of eachother', function(){
-		poly.anagram(['cat','dog','man','heelo','rats','sun','star','beach','god','hello','tsar']).should.eql([ 'dog', 'god', 'rats', 'star', 'tsar' ])
-	});
+    var output =  { 
+                    dog: [ 'god' ],
+                    rats: [ 'star', 'tsar' ],
+                    star: [ 'rats', 'tsar' ],
+                    god: [ 'dog' ],
+                    tsar: [ 'rats', 'star' ] 
+                  }
+
+
+    for (var key in result) {
+      expect(result[key]).to.eql(output[key])
+    }
+
+    console.log(result)
+  });
 });
