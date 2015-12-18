@@ -1,43 +1,23 @@
-//Given array & k-sum
-var k = 51;
-var input = [];
+`
+===Pairsum===
+Given an array of ints and a sum (int), return a 2D array all pairs of ints in the array that evaluate to the given sum.
 
-for (var i = 1; i <= 1000; i++) {
-   input.push(i);
-}
+Topics: ES6 array manipulation, non-standard looping (map, filter, reduce), unit testing, test driven development (TDD)
 
-//From 1..10, and a sum of 7, we should expect 1 & 6, 2 & 5, 3 & 4
+Derived from 
+`
 
-function pairsums (arr, sum) {
+require("babel-polyfill");
 
-	var output = [];
+exports.pairsum = (arr, sum) => {
+	let result = [];	
 
-	arr.sort(function(a, b) {// supplied compare function from greatest to least
-	  return a - b;
+	arr.sort().map((v, i) => {
+		for(let j = i; j < arr.length; j++) {
+			if (v + arr[j] === sum)
+				result.push([v, arr[j]])
+		}
 	})
 
-	if (arr.length < 2) {
-		return
-	} else {
-		var left = arr[0],
-			right = arr.length - 1;
-
-		for (i=0; i < arr.length - 1 ; i++) {
-
-			console.log(left + "  " + right);
-
-			if (left + right == sum) {
-				console.log("sum:  " + left + "  " + right);
-				output.push([left, right]);
-				left++;
-			} else {
-				right--;
-			}
-		}
-	}
-
-	return output;
-
+	return result
 }
-
-console.log(pairsums(input, k))

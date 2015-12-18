@@ -5,7 +5,7 @@ Two strings are anagrams if they are written using the same exact letters, ignor
 Each letter should have the same count in both strings. 
 For example, ‘Dog & god’ and ‘Star & tsar’ are anagrams of each other.
 
-Topics: string manipulation, sorting & asymptotic notation of (bubble, quicksort, mergesort), non-standard looping (map, filter, reduce), unit testing (BDD)
+Topics: ES5 string manipulation, sorting & asymptotic notation of (bubble, quicksort, mergesort), non-standard looping (map, filter, reduce), unit testing (BDD)
 
 Derived from http://www.ardendertat.com/2011/11/17/programming-interview-questions-16-anagram-strings/
 `
