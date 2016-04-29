@@ -1,5 +1,15 @@
-fell-swoop/
-nordstrom/
-js-scrollpath/
+#Javascript in js/
 js/node_modules
+
+#Clojure in clj/
+clj/pom.xml
+clj/*jar
+clj/lib
+clj/classes
+clj/native
+clj/.lein-failures
+clj/checkouts
+clj/.lein-deps-sum
+
+
 .DS_Store
