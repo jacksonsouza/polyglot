@@ -22,12 +22,12 @@ exports.init = function(sites, percentConnected) {
 	return Promise.resolve(grid)
 }
 
-//If we were to visualize the "grid" array, sites are joined in a tree like structure. When joining two sites, the larger tree is always on top (weighted union). 
+//If we were to visualize the "grid" array, sites are joined in a tree like structure. When joining two sites, the larger tree is always on top (weighted union).
 //Size is also manipulated accordingly by this function
 function join(grid, one, two) {
 	var rOne = root(grid, one),
 		rTwo = root(grid, two);
-	
+
 	if(rOne == rTwo) {return Promise.resolve(grid)};
 
 	if(grid.size[rTwo] > grid.size[rOne]) {
