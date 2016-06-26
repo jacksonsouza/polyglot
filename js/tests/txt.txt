@@ -1,0 +1,139 @@
+
+
+  Selection Sort
+Beginning iteration 0... [ 17, 3, 4, 19, 14, 20, 6, 13, 8, 15, 9 ]
+New minimum! 3
+Ending with swap: 17 with 3
+Beginning iteration 1... [ 3, 17, 4, 19, 14, 20, 6, 13, 8, 15, 9 ]
+New minimum! 4
+Ending with swap: 17 with 4
+Beginning iteration 2... [ 3, 4, 17, 19, 14, 20, 6, 13, 8, 15, 9 ]
+New minimum! 14
+New minimum! 6
+Ending with swap: 17 with 6
+Beginning iteration 3... [ 3, 4, 6, 19, 14, 20, 17, 13, 8, 15, 9 ]
+New minimum! 14
+New minimum! 13
+New minimum! 8
+Ending with swap: 19 with 8
+Beginning iteration 4... [ 3, 4, 6, 8, 14, 20, 17, 13, 19, 15, 9 ]
+New minimum! 13
+New minimum! 9
+Ending with swap: 14 with 9
+Beginning iteration 5... [ 3, 4, 6, 8, 9, 20, 17, 13, 19, 15, 14 ]
+New minimum! 17
+New minimum! 13
+Ending with swap: 20 with 13
+Beginning iteration 6... [ 3, 4, 6, 8, 9, 13, 17, 20, 19, 15, 14 ]
+New minimum! 15
+New minimum! 14
+Ending with swap: 17 with 14
+Beginning iteration 7... [ 3, 4, 6, 8, 9, 13, 14, 20, 19, 15, 17 ]
+New minimum! 19
+New minimum! 15
+Ending with swap: 20 with 15
+Beginning iteration 8... [ 3, 4, 6, 8, 9, 13, 14, 15, 19, 20, 17 ]
+New minimum! 17
+Ending with swap: 19 with 17
+Beginning iteration 9... [ 3, 4, 6, 8, 9, 13, 14, 15, 17, 20, 19 ]
+New minimum! 19
+Ending with swap: 20 with 19
+Beginning iteration 10... [ 3, 4, 6, 8, 9, 13, 14, 15, 17, 19, 20 ]
+    ✓ should sort all items in the array with n^2 runtime
+[ 3, 4, 6, 8, 9, 13, 14, 15, 17, 19, 20 ]
+
+  Insertion Sort
+Beginning iteration 0...  [ 17, 3, 4, 19, 14, 20, 6, 13, 8, 15, 9 ]
+Swapping 3 with 17
+Beginning iteration 1...  [ 3, 17, 4, 19, 14, 20, 6, 13, 8, 15, 9 ]
+Swapping 4 with 17
+Beginning iteration 2...  [ 3, 4, 17, 19, 14, 20, 6, 13, 8, 15, 9 ]
+Beginning iteration 3...  [ 3, 4, 17, 19, 14, 20, 6, 13, 8, 15, 9 ]
+Swapping 14 with 19
+Swapping 14 with 17
+Beginning iteration 4...  [ 3, 4, 14, 17, 19, 20, 6, 13, 8, 15, 9 ]
+Beginning iteration 5...  [ 3, 4, 14, 17, 19, 20, 6, 13, 8, 15, 9 ]
+Swapping 6 with 20
+Swapping 6 with 19
+Swapping 6 with 17
+Swapping 6 with 14
+Beginning iteration 6...  [ 3, 4, 6, 14, 17, 19, 20, 13, 8, 15, 9 ]
+Swapping 13 with 20
+Swapping 13 with 19
+Swapping 13 with 17
+Swapping 13 with 14
+Beginning iteration 7...  [ 3, 4, 6, 13, 14, 17, 19, 20, 8, 15, 9 ]
+Swapping 8 with 20
+Swapping 8 with 19
+Swapping 8 with 17
+Swapping 8 with 14
+Swapping 8 with 13
+Beginning iteration 8...  [ 3, 4, 6, 8, 13, 14, 17, 19, 20, 15, 9 ]
+Swapping 15 with 20
+Swapping 15 with 19
+Swapping 15 with 17
+Beginning iteration 9...  [ 3, 4, 6, 8, 13, 14, 15, 17, 19, 20, 9 ]
+Swapping 9 with 20
+Swapping 9 with 19
+Swapping 9 with 17
+Swapping 9 with 15
+Swapping 9 with 14
+Swapping 9 with 13
+    ✓ should construct a binary search tree from a random array of ints
+[ 3, 4, 6, 8, 9, 13, 14, 15, 17, 19, 20 ]
+
+  Merge Sort
+Merging chunks...
+ 0 to 0 [] 
+0 to 1 [ 17 ]
+Merging chunks...
+ 0 to 1 [ 3 ] 
+1 to 2 [ 17 ]
+Merging chunks...
+ 3 to 3 [] 
+3 to 4 [ 19 ]
+Merging chunks...
+ 3 to 4 [ 14 ] 
+4 to 5 [ 19 ]
+Merging chunks...
+ 0 to 2 [ 3, 4 ] 
+2 to 5 [ 17, 14, 19 ]
+Merging chunks...
+ 6 to 6 [] 
+6 to 7 [ 6 ]
+Merging chunks...
+ 6 to 7 [ 6 ] 
+7 to 8 [ 13 ]
+Merging chunks...
+ 9 to 9 [] 
+9 to 10 [ 15 ]
+Merging chunks...
+ 6 to 8 [ 6, 8 ] 
+8 to 10 [ 13, 9 ]
+Merging chunks...
+ 0 to 5 [ 3, 4, 14, 17, 19 ] 
+5 to 10 [ 20, 6, 8, 9, 13 ]
+    ✓ should construct a binary search tree from a random array of ints
+[ 3, 4, 6, 8, 9, 13, 14, 15, 17, 19, 20 ]
+
+  Quick Sort
+Swapping 19 and 9 for partition 17,3,4,19,14,20,6,13,8,15,9
+Swapping 20 and 15 for partition 17,3,4,9,14,20,6,13,8,15,19
+Paritioning finished with 8,3,4,9,14,15,6,13,17,20,19
+Swapping 9 and 6 for partition 8,3,4,9,14,15,6,13,17,20,19
+Paritioning finished with 6,3,4,8,14,15,9,13,17,20,19
+Paritioning finished with 4,3,6,8,14,15,9,13,17,20,19
+Paritioning finished with 3,4,6,8,14,15,9,13,17,20,19
+Swapping 15 and 13 for partition 3,4,6,8,14,15,9,13,17,20,19
+Paritioning finished with 3,4,6,8,9,13,14,15,17,20,19
+Paritioning finished with 3,4,6,8,9,13,14,15,17,20,19
+Paritioning finished with 3,4,6,8,9,13,14,15,17,19,20
+    ✓ should construct a binary search tree from a random array of ints
+[ 3, 4, 6, 8, 9, 13, 14, 15, 17, 19, 20 ]
+
+  Knuth Shuffle
+    ✓ should construct a binary search tree from a random array of ints
+
+
+  5 passing (16ms)
+

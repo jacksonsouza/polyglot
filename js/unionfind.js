@@ -1,7 +1,4 @@
 "use strict";
-
-//Implimentation implimented with assistance from Sedgewick's "Algorithms, 4th Ed."
-
 var _ = require("lodash"),
 	Promise = require("bluebird");
 
