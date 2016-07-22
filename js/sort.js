@@ -4,8 +4,8 @@ var _ = require("lodash"),
     Promise = require("bluebird");
 
 /* Enable to supress logs */
-//var console = {}
-//console.log = function(){}
+var console = {}
+console.log = function(){}
 
 //Find the smallest from i, end iteration with swap.
 exports.selectionSort = function(arr) {

@@ -12,7 +12,6 @@ describe("Selection Sort", function(){
     var arr = _.clone(unsortedArray)
     sort.selectionSort(arr)
       .then(function(sorted) {
-        console.log(sorted)
         expect(sorted).to.eql(sortedBySystem)
       })
  })
@@ -23,7 +22,6 @@ describe("Insertion Sort", function(){
     var arr = _.clone(unsortedArray)
     sort.insertionSort(arr)
       .then(function(sorted) {
-        console.log(sorted)
         expect(sorted).to.eql(sortedBySystem)
       })
   })
@@ -34,7 +32,6 @@ describe("Merge Sort", function(){
     var arr = _.clone(unsortedArray)
     sort.mergeSort(arr)
       .then(function(sorted) {
-        console.log(sorted)
         expect(sorted).to.eql(sortedBySystem)
       })
   })
@@ -45,7 +42,6 @@ describe("Quick Sort", function(){
     var arr = _.clone(unsortedArray)
     sort.quickSort(arr)
       .then(function(sorted) {
-        console.log(sorted)
         expect(sorted).to.eql(sortedBySystem)
       })
 
